@@ -1,9 +1,7 @@
-// Get the video and canvas elements
 const video = document.getElementById('video');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-// Load the coco-ssd model
 const modelPromise = cocoSsd.load();
 
 navigator.mediaDevices.getUserMedia({ video: true, audio: false })
@@ -20,8 +18,6 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: false })
 
 video.addEventListener('loadeddata', updatePredictions);
 
-
-// Function to update the predictions
 async function updatePredictions() {
     const model = await modelPromise;
     const predictions = await model.detect(video);

@@ -61,7 +61,7 @@ print("\n5. Évaluation du modèle...")
 x_test = pad_sequences(x_test, maxlen=MAXLEN)
 
 loss, accuracy = model.evaluate(x_test, y_test)
-print(f"  - Précision sur les données de test : {accuracy * 100:.2f}%")
+print(f"  - Précision sur les données de test : {accuracy * 100:.2f}% (perte : {loss})")
 
 print("\n6. Prédiction du sentiment d'un texte...")
 

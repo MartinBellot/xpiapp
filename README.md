@@ -2,7 +2,7 @@
 
 ![pres](./assets/img.png)
 
-Experiences Epitech Autour de l'IA
+Experiences Epitech Autour de l'IA basé sur COCO-SSD pour la vidéo, et sur l'entraînement d'un modèle avec TensorFlow pour l'analyse de texte.
 
 ## Prérequis
 
@@ -13,8 +13,8 @@ Assurez-vous d'avoir Python installé sur votre machine. Ce programme a été te
 1. Clonez ce dépôt sur votre machine locale.
 
 ```bash
-git clone <url_du_dépôt>
-cd <nom_du_dépôt>
+git clone git@github.com:MartinBellot/xpiapp.git
+cd xpiapp/
 ```
 
 2. Créez un environnement virtuel Python.

@@ -4,6 +4,9 @@
 
 Experiences Epitech Autour de l'IA basé sur COCO-SSD pour la vidéo, et sur l'entraînement d'un modèle avec TensorFlow pour l'analyse de texte.
 
+Projet 1: Détection des objets d'une vidéo
+Projet 2: Analyse de texte -> Positif ou Négatif.
+
 ## Prérequis
 
 Assurez-vous d'avoir Python installé sur votre machine. Ce programme a été testé avec Python 3.7.

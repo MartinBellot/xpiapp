@@ -1,5 +1,9 @@
 # README
 
+![pres](./assets/img.png)
+
+Experiences Epitech Autour de l'IA
+
 ## Prérequis
 
 Assurez-vous d'avoir Python installé sur votre machine. Ce programme a été testé avec Python 3.7.
@@ -33,13 +37,19 @@ pip install -r requirements.txt
 
 ## Compilation
 
-1. Exécutez le script `build.py` pour construire le modèle.
+1. Executez le script `create_dataset.py` pour construire le Dataset -> à implementer avec + d'exemples pour + de précision.
+
+```bash
+python create_dataset.py
+```
+
+2. Exécutez le script `build.py` pour construire le modèle.
 
 ```bash
 python build.py
 ```
 
-2. Exécutez le script `app.py` pour créer l'application.
+3. Exécutez le script `app.py` pour créer l'application.
 
 ```bash
 python app.py

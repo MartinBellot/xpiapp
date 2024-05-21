@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form method="POST">
+        <label for="text">Texte à analyser :</label><br>
+        <input type="text" id="text" name="text"><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    {% if sentiment is not none %}
+    <p>Le sentiment de ce texte est : {{ sentiment }}</p>
+    {% endif %}
+</body>
+</html>

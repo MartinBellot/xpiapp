@@ -10,7 +10,6 @@ from tensorflow.keras.preprocessing.text import text_to_word_sequence
 
 model = load_model('sentiment_model.h5')
 
-
 def predict_sentiment(text, maxlen = 100):
     word_index = imdb.get_word_index()
     sequence = text_to_word_sequence(text)
@@ -20,10 +19,10 @@ def predict_sentiment(text, maxlen = 100):
     prediction = model.predict(padded_sequence)
     return 'positive' if prediction[0] > 0.5 else 'negative'
 
-
-while (True):
-    text = str(input("Entrez un texte à analyser : "))
-    if text == "exit":
-        break
-    sentiment = predict_sentiment(text)
-    print(f"Le sentiment de ce texte est : {sentiment}")
+if __name__ == '__main__':
+    while (True):
+        text = str(input("Entrez un texte à analyser : "))
+        if text == "exit":
+            break
+        sentiment = predict_sentiment(text)
+        print(f"Le sentiment de ce texte est : {sentiment}")
